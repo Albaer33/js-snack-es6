@@ -37,4 +37,11 @@ for(let i = 0; i < roadBike.length; i++) {
     }
 }
 // output
-console.log(currentLightestBike);
+const {name, weightInKg} = currentLightestBike;
+const roadBikeHTML = `
+    <h2>nome: ${name}</h2>
+    <h2>peso: ${weightInKg}kg</h2>
+`;
+const bikeContainer = document.getElementById('container');
+console.log(bikeContainer);
+bikeContainer.innerHTML = roadBikeHTML;
